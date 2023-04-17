@@ -1,7 +1,8 @@
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper, 11pt, hyphens]{article}
 \usepackage[top=3cm, left=2cm, text={17cm, 24cm}]{geometry}
 \usepackage[czech]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{times}
 \usepackage[hidelinks, linkcolor=black, unicode, hyperfootnotes=false]{hyperref}
 
 \providecommand{\uv}[1]{\quotedblbase#1\textquotedblleft}
@@ -15,13 +16,39 @@
         \huge Fakulta informačních technologií}\\ \bigskip
         \vspace{\stretch{0.382}}
         {\LARGE Typografie a publikování\,--\,4.\ projekt\medskip \\} 
-        {\Huge Algoritmy}
+        {\Huge Bibliografické citace}
         \vspace{\stretch{0.618}}
     \end{center}
     {\Large \today \hfill Marek Gergel \\}
 \end{titlepage}
 
-\section{Úvodní strana}
-Název práce umístěte do zlatého řezu a nezapomeňte uvést \uv{dnešní} (today) datum a vaše jméno a příjmení.
+\section{Úvod do typografie}
+
+V~typografii sa používajú rôzne typy písma, ktoré sa využívajú na rôzne účely.
+Ich výber je dôležitý, pretože písmo môže ovplyvniť čitateľa a jeho vnímanie textu\cite{NYTimes2020}.
+
+\subsection{Písmo}
+
+Písmo je vizuálna reprezentácia abecedy a iných symbolov, ktoré sú používané na písanie textu. Písmo sa skladá z~rôznych prvkov, ako sú napríklad písmená, číslice, interpunkčné znamienka a iné symboly, ktoré sa môžu líšiť svojím tvarom, veľkosťou, hrúbkou, sklonom a ďalšími vlastnosťami\cite{Bringhurts1992}.
+
+\subsection{Patkové písmo}
+
+Patkové písmo alebo serifové písmo je písmo, ktoré má na konci písmen a číslic zakončenia pomocou ornamentálnej čiarky, tzv. patky.
+Tá sa využíva na zlepšenie čitateľnosti textu, práve vďaka optickému zarovnaniu. Čitatelnosť samotných písmen môže byť ale zhoršená\cite{Hlavenka1995}\cite{Uhlirova2016}.
+
+\section{Times New Roman}
+
+Times New Roman je patkové písmo, ktoré navrhol v~roku 1931 typograf Stanley Morison pre denník The Times. Prvý krát sa použilo 3.\ októbra 1932\cite{NYLib}.
+Písmo patrí medzi najpopulárnejšie písma na svete a je používané v~mnohých publikáciách, napríklad v~knižnom formáte, časopisoch, novinách, ale aj na internete\cite{TimesWiki}.
+
+\subsection*{Použitie v~LaTeXe}
+
+Použitie písma Times New Roman v~LaTeXe je veľmi jednoduché. Stačí zadať príkaz \texttt{\textbackslash usepackage{times}}.
+Písmo je možné použiť v~rôznych veľkostiach, napríklad \texttt{\textbackslash large} alebo \texttt{\textbackslash huge}, ale aj v~rôznych štýloch, napríklad \texttt{\textbackslash textsc{Times New Roman}} alebo \texttt{\textbackslash textit{Times New Roman}}\cite{Rybicka2003}.
+
+\newpage
+\bibliographystyle{czechiso}
+\renewcommand{\refname}{Literatura}
+\bibliography{proj4}
 
 \end{document}
